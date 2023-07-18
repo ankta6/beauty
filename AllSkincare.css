@@ -1,0 +1,103 @@
+.navi {
+  width: 100%;
+  margin-left: 40px;
+  margin-top: 16px;
+}
+
+#containers {
+  display: flex;
+  margin-top: 30px;
+}
+
+/* #refine {
+  width: 30%;
+} */
+#Products {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-left: 13%;
+}
+
+h1 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#Products>div {
+  /* width: 20%; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 20px;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#Products>div>img {
+  width: 60%;
+  height: 250px;
+  margin-left: 3.5rem;
+}
+
+#Products>div>button {
+  color: white;
+  background-color: rgb(32, 32, 32);
+  padding: 10px 15px;
+  border: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#Products>div>button:hover {
+  color: black;
+  background-color: rgb(197, 255, 255);
+}
+
+#cartcontent {
+  display: flex;
+  flex-direction: column;
+}
+
+#cartcontent>div {
+  display: flex;
+}
+
+/* Media query for mobile phones with maximum width 480px */
+@media (max-width: 480px) {
+  .navi {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  #containers {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  #Products {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-left: 0;
+  }
+
+  h1 {
+    margin-bottom: 5px;
+  }
+
+  #Products>div {
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 4px;
+  }
+
+  #Products>div>img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+}
