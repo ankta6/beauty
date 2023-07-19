@@ -7,20 +7,10 @@ const offers = ()  =>{
       />
     </div>
     <div class="text">
-      <p>FREE US shipping over $49</p>
+      <p>FREE shipping over $49</p>
     </div>
   </div>
-  <div class="offers">
-    <div class="del">
-      <img
-        src="https://imgs.search.brave.com/NkGq-K9sG3i-aDMBAC3mrrue5Y5sGDgtplPuIioJxAE/rs:fit:980:858:1/g:ce/aHR0cHM6Ly9jZG4u/b25saW5ld2ViZm9u/dHMuY29tL3N2Zy9p/bWdfNDUxODczLnBu/Zw"
-        alt=""
-      />
-    </div>
-    <div class="text">
-      <p>Refer a friend getover $15</p>
-    </div>
-  </div>
+
   <div class="offers">
     <div class="del">
       <img
@@ -29,7 +19,7 @@ const offers = ()  =>{
       />
     </div>
     <div class="text">
-      <p>New Users Save 20% USE:-NEWBIE</p>
+      <p> First order 20%OFF</p>
     </div>
   </div>
   <div class="offers">

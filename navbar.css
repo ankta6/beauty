@@ -107,11 +107,9 @@ a {
     font-size: 16px;
     border: none;
     outline: none;
-    /* color: rgb(222, 222, 222); */
     padding: 14px 16px;
     background-color: inherit;
-    /* font-family: inherit; */
-    /* margin: 0; */
+
 }
 
 .dropdown-content {
@@ -348,8 +346,8 @@ a {
     width: 40%;
 }
 
-.text {
-    width: 80%;
+.text >p {
+    width: 60%;
     display: flex;
     align-items: center;
 }
@@ -362,15 +360,16 @@ a {
     height: 6vh;
     display: flex;
     justify-content: center;
-    background-color: rgb(69, 69, 69);
+    background-color: rgb(255, 251, 251);
 }
 
-.opt {
+.opt  {
     width: 8%;
     height: 100%;
     color: white;
     display: flex;
     align-items: center;
+    font-family: bold;
     justify-content: center;
     cursor: pointer;
 }
@@ -474,6 +473,10 @@ a {
     display: flex;
 }
 
+ #social1 {
+        height: 2rem; /* Example reduced height for #social1 on smaller screens */
+    }
+
 #footer {
     position: relative;
     bottom: 0;
@@ -509,6 +512,31 @@ div>a:hover {
     width: 150px;
   }
 
+   #saledrop {
+        width: 100%; /* Set the width to 100% on smaller screens */
+        grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns for smaller screens */
+        padding: 10px; /* Reduce padding on smaller screens */
+        position: static; /* Change the position to static on smaller screens */
+    }
+
+    #saledrop>div {
+        width: 100%; /* Set the width to 100% on smaller screens */
+    }
+
+    #saledrop>div>img {
+        width: 30px; /* Example reduced width for images on smaller screens */
+    }
+
+    #saledrop>div>h2 {
+        font-size: 30px; /* Example reduced font size for h2 on smaller screens */
+    }
+
+    .text > p {
+    width: 100%; /* Example: Make the width 100% for better responsiveness */
+    font-size: 10px; /* Example: Adjust font size for better readability on smaller screens */
+    /* Add any other necessary adjustments for smaller screens */
+  }
+
   #serachkaro > input {
     padding-right: 100px;
   }
@@ -516,24 +544,13 @@ div>a:hover {
   #serachkaro > button {
     padding: 10px;
   }
+ .opt {
+        width: 12%; /* Example increased width for .opt on smaller screens */
+    }
 
-  #acc_cart,
-  #cartmenus,
-  .dropdown-content,
-  #loginacc + button {
-    display: none;
-  }
-
-  #acc_cart,
-  #loginacc + button,
-  #cartcontent {
-    display: none;
-  }
-
-  .dropdown:hover .dropdown-content,
-  #salariya:hover #saledrop {
-    display: none;
-  }
+    .opt > img {
+        height: 40%; /* Example decreased height for .opt > img on smaller screens */
+    }
 
   #popup {
     left: 0;
@@ -541,6 +558,22 @@ div>a:hover {
     height: 100vh;
     width: 100%;
   }
+
+ #bottomnav {
+      display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    width: 90%;
+    margin: auto;
+    height: 30px;
+    align-items: center;
+    }
+
+    #bottomnav > div {
+        margin-bottom: 5px; /* Add some vertical spacing between the div elements in the column layout */
+        padding: 5px 6px; /* Example reduced padding for #bottomnav > div on smaller screens */
+    }
+
 
   .next {
     width: 100%;
@@ -551,7 +584,79 @@ div>a:hover {
     width: 100%;
   }
 
+   .offers {
+        flex-wrap: wrap; /* Allow .offers to wrap its content on smaller screens */
+        width: 100%; /* Set .offers width to 100% on smaller screens */
+    }
+
+    .del {
+        width: 100%; /* Set .del width to 100% on smaller screens */
+        margin-bottom: 1rem; /* Add some spacing between .del elements in the vertical layout */
+    }
+
+    .del > img {
+        height: 30%; /* Example increased height for .del > img on smaller screens */
+        width: 30%; /* Example decreased width for .del > img on smaller screens */
+    }
+
+    
+
+.icon > div {
+        margin-top: 1rem; /* Example reduced margin-top for .icon > div on smaller screens */
+        font-size: 1rem; /* Example reduced font size for .icon > div on smaller screens */
+    }  
+   #list {
+        flex-direction: column; /* Change flex direction to column on smaller screens */
+        align-items: center; /* Center items vertically when in column layout */
+        height: auto; /* Remove the fixed height to allow content to determine the height */
+    }
+
+    #list > * {
+        margin-bottom: 1rem; /* Add some vertical spacing between the items in the column layout */
+    }
+
+
+    .lists > p {
+        margin-top: 1rem; /* Example reduced margin-top for <p> on smaller screens */
+    }
+
   .lists {
     width: 100%;
+  }
+
+
+   .but > p {
+        font-size: 1rem; /* Example smaller font size for <p> on smaller screens */
+    }
+
+    .but > button {
+        font-size: small; /* Example smaller font size for <button> on smaller screens */
+        margin-top: 1rem; /* Example reduced margin-top for <button> on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .opt {
+        width: 20%; /* Example increased width for .opt on even smaller screens */
+    }
+
+    .opt > img {
+        height: 30%; /* Example decreased height for .opt > img on even smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .offers {
+    flex-direction: column;
+  }
+
+  .del {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+
+  .text > p {
+    width: 80%;
+    font-size: 14px;
   }
 }

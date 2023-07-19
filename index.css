@@ -216,18 +216,26 @@ h1{
     }
 
     #sidekasideshow {
-        top: 40%;
-        width: 70%;
-        left: 15%;
+        top: 60%;
+        width: 50%;
+        left: 22%;
     }
 
     #sidekasideshow>h1 {
-        font-size: 40px;
+        font-size: 10px;
     }
 
+    #sidekasideshow>h2 {
+        font-size: 10px;
+    }
+
+#sidekasideshow>p {
+        font-size: 10px;
+        bottom: 20px;
+    }
     #sidekasideshow>button {
         padding: 3px;
-        font-size: 14px;
+        font-size: 8px;
     }
 
     .categorye {
@@ -236,7 +244,8 @@ h1{
     }
 
     .categorye>img {
-        width: 30%;
+        width: 50%;
+        height:80%;
     }
 
     #conbonof {

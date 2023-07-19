@@ -97,41 +97,8 @@ const navbar = () => {
     </div>
 </div>
 <hr style="height: 1.5px;background-color: black;">
-<div id="bottomnav">
-  <div>Brands</div>
-  <div><a href="./Holiday.html">Holidays</a></div>
-  <div id="salariya">Sale
-    <div class="mydrop" id="saledrop">
-      <div><h2>$</h2><p>Sale</p></div>
-      <div>Key Workers Discount</div>
-      <div>Refer A Friend</div>
-      <div><img src="https://s1.thcdn.com/navigation/121/2019/11/2918246-200-20191108.png" alt=""> <p>Clearance</p></div>
-      <div><img src="https://s1.thcdn.com/navigation/121/2019/09/Webp.net-resizeimage_%284%29-20190927.jpg" alt=""> <p>Gift And Sets</p></div>
-      <div><img src="https://s1.thcdn.com/navigation/121/2019/07/Coupon-20190718.jpg" alt=""><p>All Coupons</p></div>
-      <div><img src="https://s1.thcdn.com/navigation/121/2019/08/Label-20190803-20190803.png" alt=""><p>Fetured Offers</p></div>
-    </div>
-  </div>
-  <div><a href="./AllSkincare.html">Skin Care</a></div>
-  <div>Hair</div>
-  <div>Makeup</div>
-  <div>Bath & Body</div>
-  <div>Fragrance</div>
-  <div>Self Care</div>
-  <div>Tools</div>
-  <div>New & Trending</div>
-  <div>Build a Routine</div>
-  <div id="salariya">Advice
-    <div class="mydrop" id="saledrop">
-      <div><a href="Skincare.html">Skin care</a></div>
-      <div><a href="Makeup.html">Makeup</a></div>
-      <div><a href="Haircare.html">Haircare</a></div>
-      <div><a href="Body.html">Body</a></div>
-      <div>Tip & Advice</div>
-      <div>Beuaty Center</div>
-      <div>Free Beauty Consulataions</div>
-    </div>
-  </div>
-</div>`
+
+`
 }
 
 export default navbar;
